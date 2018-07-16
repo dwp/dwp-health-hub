@@ -56,9 +56,9 @@ if (isSecure) {
 }
 
 // Ask for username and password on production
-if (env === 'production' && useAuth === 'true') {
-  app.use(utils.basicAuth(username, password))
-}
+// if (env === 'production' && useAuth === 'true') {
+//   app.use(utils.basicAuth(username, password))
+// }
 
 // Set up App
 var appViews = [path.join(__dirname, '/app/views/'), path.join(__dirname, '/lib/')]
