@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Launching the new mentor scheme within Health and Disability
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">We had two recent PIPCS releases, which have included important upgrades to both maintain the support of the PIPCS system and a number of
+        system fixes/changes identified by both Technicians and Users that needed to be deployed to live.</p>
+
+        <h2>PIP CS R8.0 deployed to live successfully on 07/07/18</h2>
+        <p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+      <p>Teh Curam product upgrade included in R8.0 ensures the core product on which PIPCS is built continues to be supported by the product vendor IBM, whilst
+      at the same time improved the look and feel of some of the PIPCS secreens, although this will take time for users to get used to initial feedback has been positive.
+    It also included 3 urgent problem fixes for the business. These were;
+
+  PRB4247312  WS1-36 Consider contact task created irrespective of the contact being cancelled
+  PRB4247829  TASK WSHS_34 DLO Status was being generated when teh address is no longer DWPlogo
+  PRB4248957  Primary action link on Task038 produces an error</p>
+
+        <p>We also provided a problem fix in PIPCS R8.0.1 on the 13/07 which has adjusted PIPCS Launch process for Serco Camlite users and some users in Warbreck House, meaning
+        that the performance of that launch for the majority of users is a lot quicker than before, though we are aware that for some users the improvements seen is still
+      not satisfactory, which continues to be investigated. </p>
+
+      <p>We wouldn't normally deploy major releases so close together, however the business were keen that the changes included in R9.0 didn't slip, so the project
+        made special efforts to ensure the two major releases were depolyed only two weeks apart</p>
+
+
+          <h2>PIP CS R9.0 deployed to live successfully on 21/07/18</h2>
+          <p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+        <p>This included;</p>
+
+      <p>- 13 business enhancements/improvements, such as GDPR Mota Mailshot, PIP Organisation Structure change and Change to Descriptors in Decision Assist</p>
+      <p>- 21 problem fixes which represent 45% of the outstanding stock of problems on PIPCS and as a result, we expect to see a decrease in the numbers of incidents
+        raised against PIPCS.</p>
+
+        <p>Monitiring of all the changes continues to be monitored and any issues raised addressed asap.</p>
+
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
