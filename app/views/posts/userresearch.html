@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        User Research: Outcome of joint DWP & NHS trial
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/userresearch.jpg" alt="userresearchlogo">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">This week we’ve been analysing the data resulting from a joint DWP and NHS trial.</p>
+
+       <p> The trial ran for 8 weeks and involved digitally extracting medical data straight
+        from users’ medical records in order to understand several things including;</p>
+
+<p>
+• How will GPs behave when digitally transferring medical data?
+
+• How will HCPs behave when digitally requesting and receiving clinical data?
+
+• Is a digital means of getting medical data more effective?
+
+• Is there a time period that would provide a relevant medical snapshot of the user?
+
+• What would be the most valuable data to share?
+
+• Can a decision be made from the data returned?</p>
+
+<p> Our work unearthed a number of insights including;</p>
+
+<p>
+• A digital automated transfer of data is welcomed by GPs and HCPs in terms of security, speed and having a
+  more streamlined process BUT, it is only effective if the data being transferred is useful in helping HCPs decide on next steps.
+
+• User’s circumstances are unique to them and there is no silver bullet in terms of data in helping HCPs making decisions on
+  next steps. Part of the HCP’s skill set is looking at data in the round – clinical and contextual, to form a holistic picture about
+  the user and their situation. It’s often a random nugget of information that they come across that can make a difference – meaning
+  there’s no ‘magic formula’ of a specific data set that can be shared that will guarantee a decision.</p>
+
+<p> The learning has told us a lot about behaviours and will help inform future health programmes of work going forward.</p>
+
+
+
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
