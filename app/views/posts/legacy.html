@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Legacy is not the past nor the future, but it is the present
+      </h1>
+      <p class="govuk-body govuk-!-margin-bottom-8">By Lindsey Broderick</p>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/pastpresentfuture.jpg" alt="Past present and future image" style="width:100%">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">Whilst Digital Delivery teams progress projects with new technologies to drive the digital transformation of DWP, our customers and Operational
+        colleagues continue to rely on our Legacy systems to claim and administer welfare benefits. </p>
+
+      <p>Here in Health we support key Legacy systems which are used by over 4,000 agents to process over 1 million claims to Health Benefits annually - so it’s vital
+        that we remain focused on the systems which support DWPs current business.</p>
+
+      <p>One of the Health systems I’m responsible for is ESA CAM which is a Siebel application introduced into DWP back in 2013.  Whilst relatively new in terms of Legacy,
+        it still presents challenges to those who use it.  </p>
+
+      <p>Last weekend we successfully implemented a major release to deliver key system improvements.  As these were covered under the existing AM contract, there
+        was no additional cost to either Digital or Operations – yet the benefits will save ££££s in terms of processing efficiencies.</p>
+
+        <table class="govuk-table">
+  <caption class="govuk-table__caption">Key Release Scope</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Improvement</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Description</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Average Time Savings</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Move Customer Contact Number to My Cases View</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Agents can view customer Mobile number without snapshotting the NINO</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">3 minutes per claim,
+Also supports Robotics initiatives for SMS Service
+</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Allow agents to action multiple (rather than single line) Deletes in the ‘Other Benefits’ View </th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Agents can now select multiple entries for deletion, rather than repeating a single action multiple times </td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">1 minute per claim</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Deliver the Design Solution for the Top reported application errors </th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Introduction of a new button to merge information in CAM and CIS to eradicate historical data errors</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">7 minutes per impacted case.
+Scans identified that errors 2 & 3 combined occurred almost 2,500 each week.
+</td>
+    </tr>
+  </tbody>
+</table>
+
+      <p>The future of the application is under review at the moment - with the rollout of Universal Credit playing the largest influence…but rather than stop work, we’re still very much driven by the fact we support thousands of agents on a system which still processes over 25,000 claims per month – so whilst there is still opportunity to improve the user experience, generate efficiencies and strengthen the service we provide our customers, we remain passionate about the present, and the future of course!......</p>
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
