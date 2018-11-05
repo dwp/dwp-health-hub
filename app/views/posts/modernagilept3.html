@@ -1,0 +1,189 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Accelerate Modern Agility: Part Three
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/modernagilelogo.png" alt="Modern Agility logo" style="width:70%">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">Part three of a four part look into modern agility by Justin Coyne.</p>
+
+       <p>In Part 1 we identified our Values…. the things we hold dear to us, in Part 2 we discussed how
+         those values are embodied in our leaders (remembering we are all leaders!)
+         In part 3 we explore Management Practices….
+      </p>
+
+      <div class="blogpost">
+        <h1>Management Practices</h1>
+        <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will remove our fascination with ‘A’gile ceremonies and place the focus on Results over Rituals. We will ask ourselves ‘Why are we conducting a
+  stand up, retro or a review?’ Are we using these techniques with the intention behind them are just doing them with cult like behaviour.</p>
+
+  <div class="blogpost">
+    <h2>Visible Flow with Visible Progress and Visible Quality</h2>
+    <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will map out our value stream and track progress of work through this, by identifying the bottlenecks and providing interventions and changes
+  where necessary we will improve the speed of the system to get the fundamentals embedded. Quality will be built in through agreed Definitions of
+  Done and the shifting left of Testing and inclusion of Test Automation artefacts in the build pipeline. </p>
+</div>
+
+<div class="blogpost">
+  <h2>Small batches of Customer Value</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will ensure all work undertaken is to deliver ‘something’ that the customer needs, and we will ensure that we keep the items delivered small,
+  limiting the amount of Work In Progress at any one time in order to maximise throughput and so that we can deliver frequently.</p>
+</div>
+
+<div class="blogpost">
+  <h2>Frequent customer feedback on experiments</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will ensure we promote experimentation through prototyping, research, lab testing, interviews, technical spikes, A/B testing, scenarios and
+  feature toggles to name a few examples to gather customer feedback on the work we are completing to inform our decisions and priorities.
+</p>
+</div>
+
+<div class="blogpost">
+  <h2>Monitoring and Proactive Notifications</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will provide highly visible and evidence based feedback on the work that we do, and implement timely monitoring and notifications such that
+  we are the people to first find out if we have an issue. This feedback loop will help to influence the priority of future work
+</p>
+</div>
+
+<div class="blogpost">
+  <h1>Technical Practices</h1>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We are fortunate enough to have some experienced hands, technical wizardry and inquisitive minds on the team who can implement some industry
+  best practice for us to make this endeavour possible. We will place an increased focus in the following areas to build quality in as standard
+  and maintain a sustainable flow through the system.
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Clean Code, SOLID Principles and Design Patterns</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will use industry best practise and learn from previous community learning, by making our code understandable flexible and maintainable,
+  we will also facilitate component re-use and build in extensibility. Code is just written once and and then forgotten about, it is reviewed,
+  extended, moved multiple times over the life of the project. If we don’t write good code, then the code, the tests, the extensibility will
+  all suffer. If we don’t have the confidence in changing it then it will rot.
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Emergent Architecture</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>The design emerges because there is no up-front design phase, we design for what we know now, leaving decisions until the last responsible
+  moment, and even then building in as much flexibility for future change as possible. Intentional architecture is not ignored, if we really
+  do have the answer now, then use it…. And for some things (eg. Programming language) you have to decide early and with intent.
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Empowered teams</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will include the right Technical and Assurance skills in the team for them to be autonomous and make decisions. We will involve Security
+  and architecture and allow a lightweight Change Management process for Live deployments avoiding ‘risk management theatre’.
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Pairing/ Mobbing</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We recognise that there is benefit in collaborative working and we will not judge the development team by the ‘amount’ of code generated at all.
+  We will commit to exploring the use of Pairing and Mobbing as the normal for the teams but experimenting to find the balance for our specific situation.
+  Collaboration promotes: safety (will try new things out more in pairs or as a mob), knowledge sharing and collective code ownership (you learn the
+  problem and solution together), quality (pairing / mobbing have often demonstrated better quality), performance (it’s not the number of lines of code
+  written or the speed of typing that takes the time – it is the thinking that does it. Working in pairs / mobs has also shown evidence that things get
+  done quicker).
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Test Driven</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will involve the entire development team in the building and maintenance of the tests, to force the creation of testable designs, clean code and
+  whole team involvement in the test automation suites.  Thus closing the feedback loop in that tests aren’t done at the end while the developers are
+  now working on something else.  We will make current environments builds available for QA to complete manual, exploratory, and usability testing.
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Continuous Integration and Continuous Delivery</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will adopt a set of capabilities that enable us to deliver value to our users, quickly, safely and sustainably. We will Enable early identification
+  of issues, work in small chunks, automate repetitive work, keep improving and maintain overall focus on organisational goals.
+It is worthy of a specific mention that we will strive to perform Trunk Based development and have as few as possible feature branches.
+We will avoid ‘Code Freezes’ and stabilisation periods.
+ </p>
+</div>
+
+<div class="blogpost">
+  <h2>Version Control</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>A critical component of Continuous Integration and Delivery is the comprehensive use of version control. We will maintain application code, system
+  configuration, application configuration build automation and configuration to allow us improve. We will be confident that we can build, deploy and
+  roll back (if required) quickly and with success.
+ </p>
+</div>
+
+<p>…. Now we are talking, this is stuff that we can really get hold of and start doing, there is some good stuff in here, want more….
+</p>
+
+<p>
+
+<p>Continued in part 4</p>
+
+<li><a href="/posts/modernagilept2.html">Read part two here<a></li>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+</div>
+
+
+
+
+
+</p>
+<p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
