@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Health Transformation Digital Service: Update
+      </h1>
+      <p class="govuk-body govuk-!-margin-bottom-8">By Emma Anderton Associate Product Owner</p>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">We are now in week 14 of private beta, handling Universal Credit Full Service work capability
+        assessments in DWP led Assessment Centres (Tresco House, London & Five Ways House, Birmingham). </p>
+
+      <p>Key data so far:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+  <li>81 new claim referrals have been made onto the service</li>
+  <li>6 cases to date have progressed to having an appointment for a face to face assessment being booked</li>
+  <li>2 of the customers booked have subsequently attended their assessment and had decisions made on their case</li>
+  <li>Given the limited MVP scope, we anticipated referring back a number of cases to BAU processing however the numbers
+    have been higher than expected. This is helping to prioritise our backlog with new functionality being developed to
+    improve the retention rate on the new service</li>
+</ul>
+
+      <p>The teams are iterating and building out extended functionality with continuous releases of software including: </p>
+
+      <li>Editing customer details</li>
+      <li>Editing customer’s GP details</li>
+      <li>Adding other healthcare professional details</li>
+      <li>Adding events to the timeline</li>
+      <li>Recording additional illnesses and disabilities</li>
+      <li>Recording the customer arrival time for their appointment</li>
+      <li>Launching the assessment service upon customer arrival</li>
+
+      <p>Future designs are being tested through user research. In addition to our regular research at DWP Assessment Centres,
+        we are now undertaking research with Centre for Health and Disability Assessment’s (CHDA) supplier colleagues. To date
+        this has covered seven different locations across a broad range of job roles and experience levels.</p>
+
+
+      
+</div>
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
