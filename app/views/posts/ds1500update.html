@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Access to Work: "I support help for work... (..because of a disability or health condition)
+      </h1>
+      <p class="govuk-body govuk-!-margin-bottom-8">By Mike Renyard</p>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/team pic.JPG" alt="access to work team" style="width:100%">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">We’ve been working hard over the last few weeks to stand up the
+        “Report your patient is terminally ill” service (digital DS1500) in AWS. This has been particularly difficult
+        because the service is actually accessed direct from the NHS Health and Social Care network (HSCN – what was N3).
+        It’s involved a lot of tricky configuration to prove the authentication will function correctly in AWS – including
+        a direct VPN link to HSCN, setting up actual NHS smartcards and the software to run them and  working with our NHS
+        colleagues to steer this through. </p>
+
+      <p>At the same time we’ve been onboarding to a connection to NHSCN via the SDX service and this has also been tricky –
+        largely due the way in which SDX dealt with the connection, meaning we had an incompatible approach that SDX were
+        (at the time of onboarding, unable to work around. Cue much work on our side to build a workaround in AWS to align to SDX.
+        Meanwhile our Chris Brundell and SDX’s Jo Knight collaborated brilliantly to test approaches and connections , finally
+        solving the tricky DNS resolution on SDX side at the eleventh hour!</p>
+
+      <p>Following some stringent testing of the solution (a whole afternoon spent trying to break it!!) we were ready last week
+        to deploy and by Friday, after NHS colleagues had made the DNS changes at their end, we saw the first DS1500 forms pushing
+        through AWS directly into DRS. A slightly hairy ride at tmes but thanks to the great work of Chris Brundell, Chris Hulley
+        and Jo Knight (and a few friends in the NHS) we’re now able to draw a line under UK Cloud, saving costs of over £600 per day.</p>
+
+
+
+    </p></div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
