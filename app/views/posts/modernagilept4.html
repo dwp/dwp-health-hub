@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Accelerate Modern Agility: Part Four
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/modernagilelogo.png" alt="Modern Agility logo" style="width:70%">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">The fourth and final part of a four part look into modern agility by Justin Coyne.</p>
+
+      <p class="font-medium">How do we establish if we are improving?....Measure it ….. But what to measure?</p>
+
+       <p>We believe that you improve at the things that you measure. Within ‘Accelerate’ a clear set of performance metrics are identified,
+         with which a correlation can be seen between low, medium and high performing organisations.  To counteract the tendency to ‘game’ the
+         metrics these have been selected to complement each other such that we do not to prioritise team performance over service quality.
+      </p>
+
+      <div class="blogpost">
+        <h2>Lead time to Value</h2>
+        <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>This describes the time it takes to go from a customer making a request for something of value to them to the request being satisfied. In terms of
+  our KANBAN, it will be the time from a Story Card being Started (in Dev) to being ‘Released to Live’. </p>
+
+  <div class="blogpost">
+    <h2>Release Frequency</h2>
+    <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>How frequently are we delivering value to our live environment? It is only when a release happens that the user’s has access to what has been completed.
+  By choosing to monitor and by seeking an upward trend in Release frequency it will help to keep batch sizes small. It will ensure that we have a simple
+  practiced deployment process to reduce risk and overhead and accelerate feedback. </p>
+</div>
+
+<div class="blogpost">
+  <h2>Mean Time To Recover (MTTR)</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>Given that failures are unavoidable, how long does it to recover? We can positively effect this metric by the releasing at a high frequency, and by keeping
+  releases small we will make it easy to unpick any defects or failures. Through Proactive notification and monitoring we can detect problems before they happen,
+  isolate them…..fix them. We can do this much quicker and reduce the MTTR.</p>
+</div>
+
+<div class="blogpost">
+  <h2>Frequent customer feedback on experiments</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>We will ensure we promote experimentation through prototyping, research, lab testing, interviews, technical spikes, A/B testing, scenarios and
+  feature toggles to name a few examples to gather customer feedback on the work we are completing to inform our decisions and priorities.
+</p>
+</div>
+
+<div class="blogpost">
+  <h2>% Change Failure</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>How often are we implementing a change that fails? We recognise that something’s will slip through our net. We will track the software releases and
+  infrastructure changes that degrade our main service or require remediation work as a key metric. We will positively affect this by building quality in
+  as standard, by automating as much as possible and by keeping releases small and frequent.
+</p>
+</div>
+
+<div class="blogpost">
+  <h2>Progress towards Service Outcomes</h2>
+  <p class="govuk-body govuk-!-margin-bottom-8"</p>
+<p>What is the difference that our product is making in live operations? We will identify the Key Objectives and Results that are important to the business
+  (this will be our Roadmap too!) and monitor our performance against these. We will also use these metrics as guidance for prioritization.
+ </p>
+</div>
+
+<p>Everyone loves a metric….We believe that these are simple, repeatable and provide an indication of performance, with sufficient insight such that we can take
+  action to change future behavior. We also believe that these metrics will drive us towards the values defined earlier…
+ </p>
+
+<p>So my (EPIC) blog journey, (it was supposed to be completed in 1 part!), is nearly done and your journey is about to start…..lets recap.…
+ </p>
+
+<p>You remember…. don’t you…
+ </p>
+
+ <p>If you have forgotten take a look at the Infographic below. </p>
+
+ <img src="/public/images/modernagileinfographic.png" alt="Modern Agile infographic" style="width:70%">
+
+ <div class="blogpost">
+   <h2>Are you ready to give up confrontational attitudes and replace with an open culture of trust and enquiry?</h2>
+   <p class="govuk-body govuk-!-margin-bottom-8"</p>
+ <p>If any of this makes sense to you, or indeed you have a challenge to the content please give me a shout, it would be great to discuss
+  </p>
+ </div>
+
+ <p>We also have some stickers and posters available, it would look great on your laptop next to your GDS sticker!! </p>
+
+ <p>Justin</p>
+
+
+
+
+<li><a href="/posts/modernagilept3.html">Read part three here<a></li>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+</div>
+
+
+
+
+
+</p>
+<p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
