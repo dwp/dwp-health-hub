@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        October
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="blogpost">
+      <class="featured-wrapper">
+      <h2>User research: Outcome of joint DWP & NHS trial</h2>
+      <p class="govuk-body govuk-!-margin-bottom-8">October 9th 2018</p>
+
+      <img src="/public/images/Userresearch.png" alt="user research logo" style="width:100%">
+
+      <p>This week we’ve been analysing the data resulting from a joint DWP and NHS trial.</p>
+      <li><a href="/posts/userresearch.html">Read more</a></li>
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    </div>
+
+
+    </div>
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
