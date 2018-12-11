@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Architecture and Engineering
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+
+      <div class="blogpost">
+        <h2>Application Architecture</h2>
+        <p class="govuk-body govuk-!-margin-bottom-8"</p>
+          <li>Apply for Health (NS ESA) to extend Submission Handler, Case Management and Activity Log micro services (currently used across ATW and FHA)</li>
+          <li>Access to Work MV2 to deliver Single File Transfer (SFT) landing facility from Crown Hosting to support data transfer from DISC
+            (legacy case management system) to ATWIS. A GDS Notify Integration micro service is also planned to deliver SMS notifications customers who’s
+            grant is up for renewal</li>
+          <p class="govuk-body govuk-!-margin-bottom-8"</p>
+      </div>
+
+      <div class="blogpost">
+        <h2>Integration Architecture</h2>
+        <p class="govuk-body govuk-!-margin-bottom-8"</p>
+          <li>We have authenticated a DOI user through a single ADFS trust using Service Verification (SerVe) component. Next to tackle the MyOffice/Technow
+            group and role membership elements</li>
+          <li>Customer Information System (CSI) discussions with CIS product owners continue in attempt to gain agreement for a single Health System ID and
+            persistence of Customer data within the Health platform. This is to avoid heavy costs and lead times associated with on boarding individual
+            products/benefit lines and allow us to share and manage our health data more effectively (with regular refresh and batch notifications from CIS)</li>
+          <p class="govuk-body govuk-!-margin-bottom-8"</p>
+      </div>
+
+      <div class="blogpost">
+        <h2>Infrastructure Architecture</h2>
+        <p class="govuk-body govuk-!-margin-bottom-8"</p>
+          <li>Simple Queuing Service and Simple Notification Service to replace Rabbit MQ federated broker pattern currently being worked through by Narender and
+            Chris Hulley. This will improve the reliability and maintenance involved in managing health messaging/events</li>
+          <li>Elastic Container Service (ECS) proof of concept being worked through by Lewis and Narender who is pulling to together a Design Authority submission.
+            This will replace single micro service to single host architecture and have huge benefits in terms of provisioning, deployments and costs</li>
+          <p class="govuk-body govuk-!-margin-bottom-8"</p>
+      </div>
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
