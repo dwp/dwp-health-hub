@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Carer's ALlowance: Update
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/Carersscreenshot.png" alt="Service screen shot" style="width:100%">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">The Carers Allowance Digital Service, which was the first DWP Digital
+        service launched in 2014 has been successfully moved from UKCloud hosting to Amazon Web Service (AWS),
+        to meet the strategic direction of DWP Technology Services and to bring alignment of Care with other Digital services. </p>
+
+       <p>The move entailed converting the entire Citizen facing application to a DWP approved framework whilst retaining the
+         same, look and feel meeting the latest GDS standards; and rewriting the entire backend Microservice structure to meet
+         current standards reusing common Digital (CHAPS specific) components which had not been available when the service was
+         originally built. The deployment was fully automated, and now provides enhanced resilience with failover to other hosting
+         sites as well as automated rebuild in the event of loss of service.</p>
+
+<p>The new service was launched on 17th December, with deployment spread over three days to gradually ramp up the service to full load.
+  The transition was seamless to citizens with zero down time and had no impact on day to day operational activities.</p>
+
+<p>Customer completion times for Care applications are being closely monitored, with a further Release planned on 15th January to
+  resolve the minor bugs identified along with decommissioning the UKCloud hosting to reduce costs.</p>
+
+
+</p>
+<p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
