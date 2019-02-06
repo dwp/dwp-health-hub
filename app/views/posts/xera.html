@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+
+    <!-- HEADER -->
+    <div class="column-full">
+      <h1 class="heading-xlarge" style="margin-top:60px;font-size:3.5em">
+        Xera
+      </h1>
+      <a href="/index.html" class="govuk-back-link">Home</a>
+      <p class="govuk-body govuk-!-margin-bottom-8"</p>
+        <img src="/public/images/XERA.png" alt="Xera logo" style="width:100%">
+    </div>
+    <!-- HEADER ENDS -->
+
+    <div class="column-two-thirds">
+
+      <p class="font-medium">
+Xera is the break down of our technology into components for re-use across Health, CHAPS and wider DWP.
+</p>
+
+       <p>We will provide an adaptable and extensive component architecture that removes reliance on
+         previous legacy products where change can often be complex and lengthy.</p>
+
+
+<p>Xera is defined by categorising the work we do into Services, Products, Components, Patterns and Tools.
+</p>
+
+<p>Each of these components are independently deployable, scalable and based around business capabilities.</p>
+
+<p class="govuk-body govuk-!-margin-bottom-8"</p>
+
+<p class="font-medium"> Our vision</p>
+
+<p>To get the right support to the right people when they need it</p>
+
+<p>To reduce the burden on our users through the direct sharing and re-use of data</p>
+
+<p>Reduce complexity, increase transparency and build trust in our relationships with customers</p>
+
+<p>To deliver services that provide tailored journeys depending on your condition and circumstance</p>
+
+T<p>o support our people with services that improve accuracy and reduce the number of successful appeals</p>
+
+
+
+
+
+
+
+    </div>
+    <!-- LEFT COL ENDS -->
+
+    <!-- RIGHT COL STARTS -->
+    <div class="column-one-third">
+      <div class="border">
+        <h3 class="bold-medium">Our services</h3>
+        <ol>
+          <li><a href="/posts/fitnoteteam.html">Send your fit note</a></li>
+          <li><a href="/posts/accesstowork.html">Access To Work</a></li>
+          <li><a href="/posts/datasharing.html">NHS Data Share</a></li>
+          <li><a href="/posts/ds1500.html">Report that your patient is terminally ill</a></li>
+          <li><a href="/posts/carers.html">Support for Care</a></li>
+          <li><a href="/posts/fha.html">Future Health Assessment</a href="#"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RIGHT COL ENDS -->
+
+  </div>
+</main>
+
+{% endblock %}
